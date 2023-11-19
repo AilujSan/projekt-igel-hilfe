@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #e2d9cb;
+
+
+}
+
+/*Header*/
+header {
+    position: relative;
+    height: 20vh;
+    background: url(images/herbst.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #e2d9cb;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 4px 4px 4px #000;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #194d0ade;
+    padding: 15px;
+    border: 2px solid black;
+
+}
+
+nav a {
+    color: #e2d9cb;
+
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.4s ease;
+    text-shadow: 1px 1px 1px #000;
+}
+
+nav a:hover {
+    color: #9e3f08b2;
+}
+
+/*Main* index.html*/
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+    flex-direction: column;
+
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 1;
+    margin: 15px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: justify;
+    border: 1px solid black;
+    border-radius: 10px;
+
+
+}
+
+a {
+    color: #194d0aec;
+    transition: color 0.4s ease;
+}
+
+a:hover {
+    color: #9e3f08e1;
+
+}
+
+img {
+    max-width: 350px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*Main für dein-garten.html*/
+
+.garten {
+    display: flex;
+    justify-content: center;
+    color: rgb(104, 56, 16);
+}
+
+.beispiele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.beispiele img {
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.igelhaus {
+    display: flex;
+    justify-content: center;
+    color: rgb(104, 56, 16);
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+/*Main für gefahren.html*/
+
+h3 {
+    text-align: center;
+}
+
+
+
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+/*Main für wann-helfen.html*/
+
+.igel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        /* Noch kleinere Schriftgröße für Header-Text */
+    }
+
+    nav a {
+        font-size: 0.8em;
+        /* Noch kleinere Schriftgröße für Navigationselemente */
+        margin: 0 10px;
+        /* Reduzierter Abstand zwischen den Elementen */
+    }
+
+    .text-container {
+        padding: 10px;
+        /* Reduzierter Innenabstand für Textcontainer */
+        font-size: 14px;
+        /* Noch kleinere Schriftgröße für Text */
+    }
+}
+
+/*footer*/
+.back {
+    padding-left: 20px;
+}
